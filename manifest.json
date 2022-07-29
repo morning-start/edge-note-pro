@@ -1,6 +1,6 @@
 {
-  "name": "video notes",
-  "version": "0.0.0.1",
+  "name": "Note Pro",
+  "version": "0.0.1",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting"],
   "action": {
