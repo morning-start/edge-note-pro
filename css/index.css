@@ -51,5 +51,9 @@ article {
   height: calc(100% - 40px);
   background-color: #dfdbe5;
   background-image: url(../images/background.svg);
-  filter: blur(2px);
+  padding: 5px;
+}
+.part {
+  height: 30px;
+  background-color: #fff;
 }
