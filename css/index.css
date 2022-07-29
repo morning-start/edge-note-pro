@@ -1,11 +1,12 @@
 body {
   width: 450px;
-  height: 300px;
+  height: 500px;
 }
 nav {
   position: relative;
   height: 40px;
   background-color: rgb(41, 94, 174);
+  margin-bottom: 5px;
 }
 .menu {
   position: absolute;
@@ -13,7 +14,7 @@ nav {
   left: 7px;
   width: 25px;
   height: 25px;
-  background: url(./images/列表.png) no-repeat;
+  background: url(../images/列表.png) no-repeat;
   background-size: 20px;
 }
 .search {
@@ -31,7 +32,7 @@ nav {
   right: 10px;
   width: 18px;
   height: 15px;
-  background: url(./images/放大镜.png) no-repeat;
+  background: url(../images/放大镜.png) no-repeat;
   background-size: 15px;
   /* background-position: -80px 0; */
 }
@@ -45,4 +46,10 @@ nav {
   text-align: center;
   border-radius: 15px;
   background-color: #bfbfbf;
+}
+article {
+  height: calc(100% - 40px);
+  background-color: #dfdbe5;
+  background-image: url(../images/background.svg);
+  filter: blur(2px);
 }
