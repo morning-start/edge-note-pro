@@ -1,0 +1,38 @@
+article {
+  overflow: auto;
+  height: calc(100% - 40px);
+  background-color: #dfdbe5;
+  background-image: url(../images/background.svg);
+  padding: 0 5px;
+  /* filter: opacity(20%); */
+  /* opacity: 0.9; */
+  filter: alpha(opacity=50);
+}
+.part {
+  height: 45px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px;
+  background-color: rgba(49, 162, 255, 0.9);
+  margin: 7px 0;
+  border: 3px solid rgb(60, 202, 171);
+  line-height: 45px;
+  text-indent: 11px;
+  cursor: pointer;
+}
+.part span::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/文件夹.png) no-repeat;
+  background-size: cover;
+  width: 21px;
+  height: 17px;
+  /* vertical-align: middle; */
+}
+.part span {
+  font-size: 17px;
+  /* font-weight: bold; */
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

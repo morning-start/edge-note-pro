@@ -16,6 +16,7 @@ nav {
   height: 25px;
   background: url(../images/列表.png) no-repeat;
   background-size: 20px;
+  cursor: pointer;
 }
 .search {
   position: relative;
@@ -25,6 +26,7 @@ nav {
   border-radius: 15px;
   height: 25px;
   width: 300px;
+  cursor: text;
 }
 .mag {
   position: absolute;
@@ -34,26 +36,19 @@ nav {
   height: 15px;
   background: url(../images/放大镜.png) no-repeat;
   background-size: 15px;
-  /* background-position: -80px 0; */
+  cursor: pointer;
 }
-.new_folder {
+#new_folder {
   position: absolute;
+  display: block;
   top: 7px;
   right: 7px;
   width: 100px;
   height: 25px;
   line-height: 25px;
   text-align: center;
+  text-shadow: 0px 0.4px;
   border-radius: 15px;
   background-color: #bfbfbf;
-}
-article {
-  height: calc(100% - 40px);
-  background-color: #dfdbe5;
-  background-image: url(../images/background.svg);
-  padding: 5px;
-}
-.part {
-  height: 30px;
-  background-color: #fff;
+  cursor: pointer;
 }
