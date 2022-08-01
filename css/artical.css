@@ -17,25 +17,41 @@ article {
   margin: 7px 0;
   border: 3px solid rgb(60, 202, 171);
   line-height: 45px;
-  text-indent: 11px;
   cursor: pointer;
 }
 .part span::before {
   content: "";
   position: absolute;
   top: 5px;
+  left: 0;
   display: block;
   background: url(../images/文件.png) no-repeat;
   background-size: cover;
   width: 25px;
   height: 27px;
-  /* vertical-align: middle; */
 }
 .part span {
+  padding-left: 25px;
+  display: inline-block;
+  width: calc(100% - 50px);
   font-size: 17px;
-  /* font-weight: bold; */
   color: white;
+  /*1. 先强制一行内显示文本*/
   white-space: nowrap;
+  /*2. 超出的部分隐藏*/
   overflow: hidden;
+  /*3. 文字用省略号替代超出的部分*/
   text-overflow: ellipsis;
+}
+
+.part span::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  display: block;
+  background: url(../images/清除.png) no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 27px;
 }
