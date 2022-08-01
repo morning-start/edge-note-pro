@@ -9,6 +9,7 @@ article {
   filter: alpha(opacity=50);
 }
 .part {
+  position: relative;
   height: 45px;
   box-sizing: border-box;
   box-shadow: 1px 1px;
@@ -21,11 +22,13 @@ article {
 }
 .part span::before {
   content: "";
-  display: inline-block;
-  background: url(../images/文件夹.png) no-repeat;
+  position: absolute;
+  top: 5px;
+  display: block;
+  background: url(../images/文件.png) no-repeat;
   background-size: cover;
-  width: 21px;
-  height: 17px;
+  width: 25px;
+  height: 27px;
   /* vertical-align: middle; */
 }
 .part span {

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/artical.css" />
-    <script src="./js/new_folder.js"></script>
     <title>note</title>
   </head>
   <body>
@@ -16,15 +15,25 @@
         <div class="mag"></div>
       </div>
       <button id="new_folder">新建条目</button>
+      <script>
+        var new_folder = document.getElementById("new_folder");
+        var article = document.querySelector("article");
+        new_folder.onclick = function () {
+          var div = document.createElement("div");
+          var span = document.createElement("span");
+          div.appendChild(span);
+          article.appendChild(div);
+        };
+      </script>
     </nav>
     <article>
       <div class="part">
         <!-- <img src="./images/文件夹.png" alt="" /> -->
-        <span>javascript</span>
+        <span></span>
       </div>
       <div class="part">
         <!-- <img src="./images/文件夹.png" alt="" /> -->
-        <span>关于房价问题</span>
+        <span></span>
       </div>
       <div class="part">
         <!-- <img src="./images/文件夹.png" alt="" /> -->
