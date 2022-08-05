@@ -6,7 +6,6 @@ article {
   padding: 0 5px;
   /* filter: opacity(20%); */
   /* opacity: 0.9; */
-  filter: alpha(opacity=50);
 }
 .part {
   position: relative;
@@ -19,6 +18,7 @@ article {
   line-height: 45px;
   cursor: pointer;
 }
+
 .part span::before {
   content: "";
   position: absolute;
@@ -27,11 +27,15 @@ article {
   display: block;
   background: url(../images/文件.png) no-repeat;
   background-size: cover;
+  background-color: white;
+  background-position: center;
+  border-radius: 3px;
   width: 25px;
   height: 27px;
 }
+
 .part span {
-  padding-left: 25px;
+  padding-left: 30px;
   display: inline-block;
   width: calc(100% - 50px);
   font-size: 17px;
@@ -54,4 +58,25 @@ article {
   background-size: cover;
   width: 25px;
   height: 27px;
+}
+
+.part img::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  display: block;
+  background: url(../images/图片.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.part img {
+  display: inline-block;
+  margin-left: 30px;
+  height: 30px;
 }
